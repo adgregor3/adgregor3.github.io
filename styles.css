@@ -1,17 +1,11 @@
-* {
-  margin:0px;
-  padding:0px;
-}
-
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
-}
-
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 24px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-}
+:root { --bg-light: #F0F0F0; --fg-light: #212830; --bg-dark: #212830; --fg-dark: #F0F0F0; }
+body { font: 24px "Segoe UI", Roboto, sans-serif; padding: 0.5rem; }
+body { background-color: var(--bg-light); color: var(--fg-light); } body.dark-mode { background-color: var(--bg-dark); color: var(--fg-dark); }
+.content { max-width: 360px; margin: 0 auto; text-align: center; }
+.goto-dashboard { float: left; }
+.theme-switch { float: right; }
+.goto-dashboard img, .theme-switch svg { width: 32px; height: 32px; }
+.avatar { width: 210px; height: 210px; padding: 4px; border: 1px solid; border-radius: 4px; }
+svg > path { fill: var(--fg-light); } .dark-mode svg > path { fill: var(--fg-dark); }
+a { text-decoration: none; transition: .25s; } a { color: var(--fg-light); } .dark-mode a { color: var(--fg-dark); } a:hover { opacity: .5; }
+h1 { font-weight: lighter; margin: 0; }
